@@ -5,6 +5,7 @@ showAlertTwo:
 showAlertTwo의 경고창은 primaryButton으로 "재다운로드"를 설정했습니다.
 
 
+
 따라서 .default 스타일로 설정된 버튼이 기본으로 선택됩니다.
 
 
