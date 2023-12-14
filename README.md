@@ -107,5 +107,24 @@ secondaryButton은 주요 작업 외의 대체 작업이나 취소, 뒤로가기
 ***
 # 앱의 시작 파일을 설정하여 Swift UI 파일이 UIKit 파일보다 먼저 나오게 하기
 
+## 1. AppDelegate에 가서 두개 다 임포드 하기 import UIKit import SwiftUI
+
+## 2. (UIKit으로 먼저 파일을 생성한 경우), AppDelegate의  func application를 수정해준다
+
+## 3.  let swiftUIView = "원하는 시작 파일명" 을 넣는다!
+```swift
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+           window = UIWindow(frame: UIScreen.main.bounds)
+           
+           let swiftUIView = AlertSwiftUI() // SwiftUI 파일의 View 이름으로 바꿔주세요⭐️
+           let hostingController = UIHostingController(rootView: swiftUIView)
+           
+           window?.rootViewController = hostingController
+           window?.makeKeyAndVisible()
+           
+           return true
+       }
+```
+
 
 
