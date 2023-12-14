@@ -1,3 +1,4 @@
+# 버튼 스타일에 따른 경고창 설정
 showAlertTwo와 showAlertThree의 차이점은 각각의 경고창에서 설정된 버튼 스타일에 있습니다.
 
 showAlertTwo:
